@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en"><head>
+<title>Joke Machine</title>
+<meta name="author" content="Cameron Cawley">
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="aos_stylesheet.css">
+<script type="text/javascript">
+var jokes = ["What do you call a one-eyed dinosaur?","What do you call a nine-eyed dinosaur?","What's the difference between an angler and a dunce?","Where do sick gnomes go?","Which players can't you trust in an orchestra?","What's the difference between a married man and a bachelor?","How do snails keep their shells shiny?","What's the difference between a railway train and a tree?","What's the difference between a young lady and a fresh loaf?","What's the difference between a nail and a bad boxer?","What's the difference between a bottle of medicine and a doormat?","What do you call a three legged donkey?","Where did the mistletoe go to become rich and famous?","Why are ghosts so bad at lying?","If a crocodile skin makes a pair of shoes, what do you make from banana skins?","What did the German Soldiers shoot in their guns in one Christmas in World War II?","","Where did Mr and Mrs Rabbit go after their wedding?","Where did the dog park his car?","What do dogs use to wash their hair?","What musical instrument do you find in the bathroom?","What's brown and lives in a bell tower?","What do you get when you cross a skunk with a teddy bear?"];
+var answers = ["A do-you-think-he-saw-us.","A diiiiiiiiinosaur!","An angler baits his hooks and a dunce hates his books.","To the Elf Centre.","The fiddlers.","One kisses his misses and the other misses the kisses.","They use snail varnish.","One leaves its shed and the other sheds its leaves.","One is a well-bred maid and the other is a well-made bread.","One is knocked in and the other is knocked out.","One is shaken up and taken and the other is taken up and shaken.","A wonkey.","Hollywood.","You can see right through them.","Slippers.","Missile-toe!","On their bunnymoon!","In a car bark!","Shampoodle!","A tuba toothpaste!","The Lunch Bag of Notre Dame!","Winnie the PYEW!"];
+var x;
+
+function tellJoke() {
+x = Math.floor((Math.random() * 9) +1)-1;
+document.getElementById("joke").innerHTML=jokes[x];
+document.getElementById("link").href="javascript:";
+document.getElementById("button").onclick=answerJoke;
+document.getElementById("button").value="Answer";
+document.getElementById("button").style.visibility="visible";
+}
+
+function answerJoke() {
+document.getElementById("joke").innerHTML=answers[x];
+document.getElementById("button").onclick=resetJoke;
+document.getElementById("button").value="Restart";
+}
+
+function resetJoke() {
+document.getElementById("joke").innerHTML="Click on the joke machine for a joke.";
+document.getElementById("link").href="javascript:tellJoke();";
+document.getElementById("button").style.visibility="hidden";
+}
+</script>
+</head><body>
+<h1>Joke Machine</h1>
+<p><a href="http://theoval.cmp.uea.ac.uk/cgi-bin/aos.cgi">Pirate Game</a></p>
+<p id="joke">Click on the joke machine for a joke.</p>
+<table><tr><td>
+<a id="link" href="javascript:tellJoke();"><img src="images/jmach.png" alt="Joke Machine" style="align:left;border:none"></a><br>
+</td></tr><tr><td>
+<input id="button" type="button" onclick="answerJoke()" value="Answer" style="visibility:hidden">
+</td></tr></table>
+<noscript>You need JavaScript enabled in order to use the Joke Machine.</noscript>
+<p>This game was designed by me for a 
+fund-raising event that I organised to raise money for the
+<a href="http://apostleshipofthesea.org.uk/">Apostleship of the Sea</a> when I was 10. Originally, <a href="http://www.dickimaw-books.com/">Nicola L. C. Talbot</a> wrote the actual code, and I just did the storyboard and images. However, I remade the game myself using JavaScript years later.<br>
+If you enjoy playing the game, please consider <a href="http://apostleshipofthesea.org.uk/cms/donate-to-us">making a donation to the AOS</a>.<br></p>
+  <p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Strict" height="31" width="88"></a>
+  </p>
+</body></html>
+
+

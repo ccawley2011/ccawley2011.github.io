@@ -1,0 +1,50 @@
+h1 {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.alert {
+   background-color: #ADD8E6;
+   text-align: center;
+}
+
+.contents {
+   border: 1px solid black;
+   border-radius: 25px;
+   -moz-border-radius: 25px;
+   -webkit-border-radius: 25px;
+   width: 200px;
+   padding-left: 20px; 
+   margin-left: 80px;
+}
+
+.styletable,.styletable td {
+   border: 1px solid #e6e6e6;
+   border-radius: 7px;
+   -moz-border-radius: 7px;
+   -webkit-border-radius: 7px;
+   background-color: #ffffff;
+}
+
+.styletable {
+   background-color: #d9d9d9;
+}
+
+.styletable td {
+   padding-left: 16px;
+   padding-right: 16px;
+}
+
+.progname {
+   float: left;
+   margin-top: 8px;
+   margin-bottom: 8px;
+}
+
+.requires {
+   text-align: right;
+   margin-bottom: 14px;
+}
+
+a img {
+   border: 0px;
+}
