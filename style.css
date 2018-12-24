@@ -14,6 +14,7 @@ h1 {
    -webkit-border-radius: 25px;
    width: 200px;
    padding-left: 20px; 
+   padding-right: 20px;
    margin-left: 80px;
 }
 
