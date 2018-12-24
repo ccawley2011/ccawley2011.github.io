@@ -40,7 +40,7 @@ h1 {
    margin-bottom: 8px;
 }
 
-.requires {
+.requires,.version {
    text-align: right;
    margin-bottom: 14px;
 }
